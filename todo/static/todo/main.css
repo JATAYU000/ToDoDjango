@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+}
+li h1 {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.foo{
+    height: 50px;
+    padding: 0px 0px 0px 70px;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: repeat(1,minmax(80px,438px));
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 80px;    
+}
+.box .inputbox{
+    background-color: #ace1af ;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px -2px black;
+    padding: 18px 18px;
+    text-align: centre;
+    border-radius: 10px;
+}
+
+}
+.box .inputbox input{
+    width: 250px;
+    height: 25px;
+    padding: 1px;
+}
+.box .inputbox h1{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 30px 10px;
+    }
+.box .inputbox p{
+    font-size: 20px;
+    margin: 10px;
+
+}
+.box .inputbox button{
+    border-radius: 10px;
+    text-decoration: none;
+    width: 70px;
+    height: 35px;
+    margin: 10px;
+    background-color: #aaff80;
+}
+.box .inputbox a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.box .inner-box{
+    background-color: #ace1af ;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px -2px black;
+    padding: 18px 18px;
+    border-radius: 10px;
+}
+
+.box .inner-box table { border-spacing: 30px; }
+table { width: 400px; border-collapse: collapse; border-spacing: 20px; } 
+th { text-align: left; } 
+th, td { padding: 10px; border-bottom: 15px solid transparent; background-color: #aaff80; color: black; background-clip: padding-box; } 
+.box .inner-box .link{
+    text-decoration: none;
+}
+.box .inner-box .dltlogo{
+    width: 20px;
+}
+
+.dltlogo {
+    width: 22px;
+    height: 22px;
+
+}
+.content {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#Register_block{
+    width: max-content;
+    margin: 40px auto;
+    font-family: "Segoe UI", sans-serif;
+    padding: 25px 28px;
+    background: #151414;
+    border-radius: 4px;
+    border: 1px solid #302d2d;
+}
+
+.legend_reg{
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: black;
+}
+.fieldset_reg p{
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: black;
+}
+.fieldset_reg li{
+    text-decoration: none;
+    color: white;
+}
+.fieldset_reg input{
+    width: 250px;
+    height: 25px;
+    padding: 1px;
+    
+}
+.button_reg {
+    width: 100px;
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button {
+    padding: 10px 18px;
+    font-size: 15px;
+    background: #1a3969;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    color: #f4f4f4;
+    transition: all 0.2s ease;
+}
+.button:hover {
+    opacity: 0.9;
+}
+.button:focus {
+    box-shadow: 0px 0px 0px 3px black;
+}

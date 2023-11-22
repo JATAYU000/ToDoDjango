@@ -1,0 +1,17 @@
+{% extends "todo/base.html" %}
+{% block content %}
+	<div class = 'content'>
+		<form class = 'Register_block' method="POST"> 
+			{% csrf_token %}  <!-- cross platform token -->
+			<fieldset class = "fieldset_reg">
+				<legend class = "legend_reg">   <!-- design ig -->
+					<h1 style="font-size:28px">Add Task</h1>
+				</legend>
+				{{ form.as_p }}
+			</fieldset>
+			<div>
+				<button class="button_reg" type="submit">Save</button>
+			</div>
+		</form>
+	</div>
+{% endblock content %}

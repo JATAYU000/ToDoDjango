@@ -1,0 +1,51 @@
+{% extends "todo/base.html" %}
+
+{% block content %}
+	<div class = 'box'>
+		<div class='inputbox'>
+			<h1>Hey {{ user.username }}! </h1>
+  			<label>
+  				<p>Wanna Add Some Tasks?</p>
+  				<button >
+  					<a class = "link" href = "{% url 'task-create' %}">Yes,Add</a>
+  				</button>
+  			</label>
+  		</div>
+
+  		<div class='inner-box'>
+  			<table>
+	  			<tr>
+	  				<th>Tasks</th>
+	  				<th></th>
+	  				<th>Delete</th>
+	  			</tr>
+	  			{% for item in items %}
+	  				{% if item.user == user %}
+	  				{% if user.is_authenticated %}
+			  			<tr>
+			  				<td>
+			  					<label > 
+				  					<input type="checkbox" 
+				  					{% if item.status == True %}
+				  						checked
+				  					{% endif %}>
+				  					
+				  					<i></i>
+				  					{% if item.status == True %}
+				  						<s><span><a class="link" href="{% url 'task-update' item.id %}" >{{item.taskname}}</a></span></s>
+				  					{% else %}
+				  						<span><a class="link" href="{% url 'task-update' item.id %}" >{{item.taskname}}</a></span>
+				  					{% endif %}
+			  					</label>
+			  				</td>
+			  				<td></td>
+			  				<td><a class="link" href="{% url 'task-delete' item.id %}">&#10060;</a></td>
+			  			</tr>
+			  		{% endif %}
+			  		{% endif %}
+	  			{% endfor %}
+	  		</table>
+  			
+  		</div>
+	</div>
+{% endblock content %}
